@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-200">
       <div className="bg-green-900 text-white w-[350px] p-6 rounded-xl shadow-lg">
-        <h1 className="text-center text-xl font-bold mb-4">Portfolio</h1>
+
 
         <div className="flex items-center space-x-5 p-2 rounded-b-3xl">
           <img

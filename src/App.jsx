@@ -77,7 +77,7 @@ function App() {
             <GraduationCap className="w-5 h-5" /> Education
           </h3>
           <p className="text-sm md:text-base text-gray-200 font-semibold">Bahir Dar University</p>
-          <p className="text-xs md:text-sm text-red-400 font-bold">4th Year IT Student</p>
+          <p className="text-xs md:text-sm text-red-400 font-bold">4th Year Student</p>
           <div className="mt-2 w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
            
           </div>

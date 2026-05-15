@@ -2,7 +2,7 @@ import React from "react";
 import { Mail, Phone, MapPin, GraduationCap, Code, Star } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import profileImage from './assets/53.jpg';
+import profileImage from './assets/agico.jpg';
 
 function App() {
   return (

@@ -252,7 +252,7 @@ function App() {
               <span className="font-bold text-red-400">Phone:</span> +251 984 935 677
             </p>
             <p className="text-sm text-gray-300">
-              <span className="font-bold text-red-400">Email:</span> agerneshdereje8@email.com
+              <span className="font-bold text-red-400">Email:</span> agerneshdereje8@gmail.com
             </p>
             <motion.p 
               whileHover={{ x: 5 }}

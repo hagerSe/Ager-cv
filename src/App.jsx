@@ -62,9 +62,9 @@ function App() {
           <h3 className="font-bold text-lg text-red-400 flex items-center gap-2 mb-2">
             <Star className="w-5 h-5" /> About Me
           </h3>
-          <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-            Experienced <span className="text-red-400 font-semibold">2+ years</span> in web development, specializing in MERN and PERN stack technologies for full-stack applications. Passionate about creating beautiful and functional web experiences. Worked on different real-world problem-solving projects.
-          </p>
+         <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+  <span className="text-red-400 font-semibold">2+</span> years of hands-on work in web development using MERN and PERN stacks. Focused on building full-stack applications that are both visually appealing and highly functional. Contributed to multiple real-world projects with practical impact.
+</p>
         </motion.div>
 
         <motion.div 
@@ -77,11 +77,11 @@ function App() {
             <GraduationCap className="w-5 h-5" /> Education
           </h3>
           <p className="text-sm md:text-base text-gray-200 font-semibold">Bahir Dar University</p>
-          <p className="text-xs md:text-sm text-red-400 font-bold">4th Year Student</p>
+          <p className="text-xs md:text-sm text-red-400 font-bold">Information Technology Department - Fresh Graduate</p>
           <div className="mt-2 w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
            
           </div>
-          <p className="text-xs text-gray-500 mt-1">Expected Graduation: 2026</p>
+          <p className="text-xs text-gray-500 mt-1">Graduation: 2026</p>
         </motion.div>
 
         <motion.div 
@@ -91,13 +91,13 @@ function App() {
           className="mt-4 p-4 bg-gray-900/50 rounded-xl hover:bg-gray-900/70 transition-all duration-300 border border-gray-800"
         >
           <h3 className="font-bold text-lg text-red-400 flex items-center gap-2 mb-3">
-            <Code className="w-5 h-5" /> Technical Skills
+            <Code className="w-5 h-5" />  Skills
           </h3>
           
           <div className="mb-4">
-            <p className="text-sm text-red-400 font-semibold mb-2">MERN Stack</p>
+            <p className="text-sm text-red-400 font-semibold mb-2">Database Languages</p>
             <div className="flex flex-wrap gap-2">
-              {["MongoDB", "Express.js", "React", "Node.js"].map((skill, index) => (
+              {["MongoDB", "MySQL", "PostgreSQL", "phpMyAdmin"].map((skill, index) => (
                 <motion.span
                   key={skill}
                   initial={{ scale: 0 }}
@@ -112,9 +112,26 @@ function App() {
           </div>
 
           <div className="mb-4">
-            <p className="text-sm text-red-400 font-semibold mb-2">PERN Stack</p>
+            <p className="text-sm text-red-400 font-semibold mb-2">Backend Languages</p>
             <div className="flex flex-wrap gap-2">
-              {["PostgreSQL", "Express.js", "React", "Node.js"].map((skill, index) => (
+              {["Node.js", "Express", "PHP"].map((skill, index) => (
+                <motion.span
+                  key={skill}
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 1 + index * 0.1 }}
+                  className="px-3 py-1.5 bg-gray-800/50 rounded-lg text-xs text-gray-300 border border-red-900/50 hover:bg-red-900/20 hover:border-red-700 transition-colors"
+                >
+                  {skill}
+                </motion.span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="mb-4">
+            <p className="text-sm text-red-400 font-semibold mb-2">Frontend Languages & Frameworks</p>
+            <div className="flex flex-wrap gap-2">
+              {["React", "JavaScript", "Tailwind CSS", "HTML", "CSS"].map((skill, index) => (
                 <motion.span
                   key={skill}
                   initial={{ scale: 0 }}
@@ -128,15 +145,88 @@ function App() {
             </div>
           </div>
 
+          {/* Version Control */}
+          <div className="mb-4">
+            <p className="text-sm text-red-400 font-semibold mb-2">Version Control</p>
+            <div className="flex flex-wrap gap-2">
+              {["Git", "GitHub", "GitLab"].map((skill, index) => (
+                <motion.span
+                  key={skill}
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 1.8 + index * 0.1 }}
+                  className="px-3 py-1.5 bg-gray-800/50 rounded-lg text-xs text-gray-300 border border-red-900/50 hover:bg-red-900/20 hover:border-red-700 transition-colors"
+                >
+                  ✓ {skill}
+                </motion.span>
+              ))}
+            </div>
+          </div>
+
+          {/* Task Management Tools */}
+          <div className="mb-4">
+            <p className="text-sm text-red-400 font-semibold mb-2">📋 Task Management Tools</p>
+            <div className="flex flex-wrap gap-2">
+              {["ClickUp", "Trello", "Jira"].map((skill, index) => (
+                <motion.span
+                  key={skill}
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 2.0 + index * 0.1 }}
+                  className="px-3 py-1.5 bg-gray-800/50 rounded-lg text-xs text-gray-300 border border-red-900/50 hover:bg-red-900/20 hover:border-red-700 transition-colors"
+                >
+                  ✓ {skill}
+                </motion.span>
+              ))}
+            </div>
+          </div>
+
+          {/* DevOps */}
+          <div className="mb-4">
+            <p className="text-sm text-red-400 font-semibold mb-2">🚀 DevOps</p>
+            <div className="flex flex-wrap gap-2">
+              {["DevOps"].map((skill, index) => (
+                <motion.span
+                  key={skill}
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 2.3 + index * 0.1 }}
+                  className="px-3 py-1.5 bg-gray-800/50 rounded-lg text-xs text-gray-300 border border-red-900/50 hover:bg-red-900/20 hover:border-red-700 transition-colors"
+                >
+                  ✓ {skill}
+                </motion.span>
+              ))}
+            </div>
+          </div>
+
+          {/* Authentication & Authorization */}
+          <div className="mb-4">
+            <p className="text-sm text-red-400 font-semibold mb-2">🔐 Authentication & Authorization</p>
+            <div className="flex flex-wrap gap-2">
+              {["JWT", "OAuth2"].map((skill, index) => (
+                <motion.span
+                  key={skill}
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 2.4 + index * 0.1 }}
+                  className="px-3 py-1.5 bg-gray-800/50 rounded-lg text-xs text-gray-300 border border-red-900/50 hover:bg-red-900/20 hover:border-red-700 transition-colors"
+                >
+                  ✓ {skill}
+                </motion.span>
+              ))}
+            </div>
+          </div>
+
+          {/* Soft Skills - LAST */}
           <div>
-            <p className="text-sm text-red-400 font-semibold mb-2">Professional Skills</p>
+            <p className="text-sm text-red-400 font-semibold mb-2">💡 Soft Skills</p>
             <div className="flex flex-wrap gap-2">
               {["Leadership", "Problem Solving", "Team Collaboration", "Communication", "Project Management"].map((skill, index) => (
                 <motion.span
                   key={skill}
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  transition={{ delay: 1.8 + index * 0.1 }}
+                  transition={{ delay: 2.6 + index * 0.1 }}
                   className="px-3 py-1.5 bg-gray-800/50 rounded-lg text-xs text-gray-300 border border-red-900/50 hover:bg-red-900/20 hover:border-red-700 transition-colors"
                 >
                   ✓ {skill}
@@ -181,7 +271,7 @@ function App() {
             </motion.p>
             <p className="text-sm text-gray-300 flex items-center gap-3">
               <MapPin className="w-4 h-4" /> 
-              <span>Bahirdar City, Ethiopia</span>
+              <span>Addis Ababa, Ethiopia</span>
             </p>
           </motion.div>
         </motion.div>
@@ -191,5 +281,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -248,18 +248,18 @@ function App() {
           
           <motion.div whileHover={{ x: 5 }} className="space-y-3">
             <p className="text-sm text-gray-300 flex items-center gap-3">
-              <Phone className="w-4 h-4" /> 
+            
               <span>+251 984 935 677</span>
             </p>
             <p className="text-sm text-gray-300 flex items-center gap-3">
-              <Mail className="w-4 h-4" /> 
+             
               <span>agerneshdereje8@email.com</span>
             </p>
             <motion.p 
               whileHover={{ x: 5 }}
               className="text-sm text-gray-300 flex items-center gap-3"
             >
-              <FaGithub className="w-4 h-4" />
+             
               <a
                 href="https://github.com/HagerSe"
                 target="_blank"
@@ -270,7 +270,7 @@ function App() {
               </a>
             </motion.p>
             <p className="text-sm text-gray-300 flex items-center gap-3">
-              <MapPin className="w-4 h-4" /> 
+               
               <span>Addis Ababa, Ethiopia</span>
             </p>
           </motion.div>

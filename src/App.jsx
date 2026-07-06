@@ -63,8 +63,8 @@ function App() {
             <Star className="w-5 h-5" /> About Me
           </h3>
          <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-  <span className="text-red-400 font-semibold">2+</span> years of hands-on work in web development using MERN and PERN stacks. Focused on building full-stack applications that are both visually appealing and highly functional. Contributed to multiple real-world projects with practical impact.
-</p>
+          <span className="text-red-400 font-semibold">2+</span> years of hands-on work in web development using MERN and PERN stacks. Focused on building full-stack applications that are both visually appealing and highly functional. Contributed to multiple real-world projects with practical impact.
+        </p>
         </motion.div>
 
         <motion.div 
@@ -236,42 +236,40 @@ function App() {
           </div>
         </motion.div>
 
+        {/* Contact Information - BOLD LABELS */}
         <motion.div 
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
           className="mt-4 p-4 bg-gray-900/50 rounded-xl hover:bg-gray-900/70 transition-all duration-300 border border-gray-800"
         >
-          <h3 className="font-bold text-lg text-red-400 flex items-center gap-2 mb-3">
-            <Mail className="w-5 h-5" /> Contact Information
+          <h3 className="font-bold text-lg text-red-400 mb-3">
+            Contact Information
           </h3>
           
           <motion.div whileHover={{ x: 5 }} className="space-y-3">
-            <p className="text-sm text-gray-300 flex items-center gap-3">
-            
-              <span>+251 984 935 677</span>
+            <p className="text-sm text-gray-300">
+              <span className="font-bold text-red-400">Phone:</span> +251 984 935 677
             </p>
-            <p className="text-sm text-gray-300 flex items-center gap-3">
-             
-              <span>agerneshdereje8@email.com</span>
+            <p className="text-sm text-gray-300">
+              <span className="font-bold text-red-400">Email:</span> agerneshdereje8@email.com
             </p>
             <motion.p 
               whileHover={{ x: 5 }}
-              className="text-sm text-gray-300 flex items-center gap-3"
+              className="text-sm text-gray-300"
             >
-             
+              <span className="font-bold text-red-400">GitHub:</span>
               <a
                 href="https://github.com/HagerSe"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-red-400 transition-colors duration-300"
+                className="hover:text-red-400 transition-colors duration-300 ml-1"
               >
                 github.com/hagerSe
               </a>
             </motion.p>
-            <p className="text-sm text-gray-300 flex items-center gap-3">
-               
-              <span>Addis Ababa, Ethiopia</span>
+            <p className="text-sm text-gray-300">
+              <span className="font-bold text-red-400">Location:</span> Addis Ababa, Ethiopia
             </p>
           </motion.div>
         </motion.div>
@@ -281,4 +279,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
